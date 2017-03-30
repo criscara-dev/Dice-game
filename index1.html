@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Dice game</title>
+    </head>
+
+    <body id="grad">
+       <div class="section group">
+           <div class="col span_1_of_3"></div>
+           <div id="title" class="col span_1_of_3">-The Pig (Dice) Game-</div>
+           <div class="col span_1_of_3"></div>
+        </div>
+    
+        <div class="section group">
+            <div class="col span_1_of_3"></div>
+            <div class="col span_1_of_3">
+                <!--BEGIN MODAL BUTTON-->
+                <button type="button" class="btn btn-info btn-md" style=" color: #fff;
+                background-color: dodgerblue; border-color: dodgerblue" data-toggle="modal" data-target="#myModal" data-backdrop="true">INFO</button>
+                <!--END MODAL BUTTON-->
+            </div>
+            <div class="col span_1_of_3"></div>
+        </div>
+            
+        
+            <div class="section group">
+                     <div class="col span_1_of_3"></div>
+                     <div class="col span_1_of_3">
+                     <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+                     </div>
+                     <div class="col span_1_of_3"></div>
+            </div>
+               
+        
+        
+            <div class="section group">
+                     <div class="col span_1_of_3">
+                            <div class="player-0-panel active">
+                                <div class="player-name" id="name-0">Player n.1</div>
+                                <div class="player-score" id="score-0">50</div>
+                                <div class="player-current-box">
+                                    <div class="player-current-label">Current</div>
+                                    <div class="player-current-score" id="current-0">10</div>
+                                </div>
+                            </div>
+                     </div>
+                     <div class="col span_1_of_3">
+                        <img src="/images/dice-5.jpg" alt="Dice" class="dice">
+                     </div>
+                     <div class="col span_1_of_3">
+                        <div class="player-1-panel">
+                        <div class="player-name" id="name-1">Player n.2</div>
+                        <div class="player-score" id="score-1">60</div>
+                            <div class="player-current-box">
+                                <div class="player-current-label">Current</div>
+                                <div class="player-current-score" id="current-1">5</div>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+     
+                    
+                    
+                    
+          <div class="section group">
+                     <div class="col span_1_of_3"></div>
+                    <div class="col span_1_of_3">
+                        <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+                        <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+                    </div>
+                    <div class="col span_1_of_3"></div>
+        </div> 
+            
+        <!--begin html modal window-->
+                <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title"><strong>HOw to play</strong></h4>
+                    </div>
+                    <div class="modal-body">
+                      <ul>
+                        <li>Press New Game to start;</li>
+                        <li>The game has 2 players, playing in rounds;</li>
+                        <li>In each turn, a player rolls a dice as many times as he whishes. Each result get added to his CURRENT score:</li>
+                        <li>If the player rolls a 1, all his ROUND score gets lost and it's the next player's turn;</li>
+                        <li>The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's     the next player's turn;</li>
+                        <li>The first player to reach ... 30 points on GLOBAL score, wins the game.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default clos" data-dismiss="modal" style="background-color: #EB4D4D; color: #fff;">Close</button>
+                        <br/>
+                    </div>
+                  </div>
+                    </div>
+                </div>
+          <!--end html modal window--> 
+ 
+        <script src="app.js"></script>
+        
+         
+        
+    </body>
+</html>

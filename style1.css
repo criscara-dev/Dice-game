@@ -1,0 +1,276 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+/*.img {
+    width: 50%;
+    height: auto;
+}*/
+/*body {
+    
+    background-size: cover;
+    background-position: center;
+    font-family: Roboto;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}*/
+
+
+
+/*.player-0-panel,
+.player-1-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}*/
+
+button {
+    text-align: center;
+}
+/*body {
+    background-image: url(/images/table.jpg);
+    background-size: cover;
+    background-position: center;
+}*/
+
+#grad {
+    background-position: center;
+    background-size: cover;
+    background: #32fd2a; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(to bottom right, #c1ffc3, #32fd2a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to bottom right, #c1ffc3, #32fd2a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to bottom right, #c1ffc3, #32fd2a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #c1ffc3, #32fd2a); /* Standard syntax */
+}
+
+
+
+/**********************************************
+*** PLAYERS
+**********************************************/
+
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #000;
+    margin-bottom: 60px;
+}
+
+/*.active { background-color: #e6dada; }
+.active .player-name { font-weight: 300; }
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 80px;
+    position: absolute;
+    color: #42e035;
+    top: -20px;
+    right: 10px;
+    
+}*/
+
+.player-current-box {
+    background-color: dodgerblue;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.player-current-score {
+    font-size: 30px;
+}
+
+button {
+    text-align: center;
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    text-align: center;
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.btn-new { top: 45px;
+            font-size: 150%;}
+.btn-roll { top: 403px;
+            font-size: 150%;}
+.btn-hold { top: 467px;
+            font-size: 150%;}
+img {
+    text-align: center;
+}
+.dice {
+    
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.50);
+}
+
+.winner { background-color: #f7f7f7; }
+.winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+
+
+.btn-info {
+    color: #fff;
+    background-color: #EB4D4D;
+    border-color: #EB4D4D;
+}
+
+
+
+/*------------------MODAL-----------------*/
+
+
+.modal-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+li {
+    font-size: 150%;
+}
+
+/*-----------------END MODAL-------------------*/
+
+
+
+/*  SECTIONS  */
+.section {
+    /*max-width: 1140px;*/
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+    text-align: center;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+   
+   .player-current-box {width: 50%}
+    .player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.player-current-score {
+     font-size: 30px;
+}
+}
+/*
+.player-current-box {
+    background-color: dodgerblue;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.player-current-score {
+    font-size: 30px;
+}
+*/
+
+#title {
+    font-size: 200%;
+    text-transform: uppercase;    
+}
+
+i {
+    color: #fff;
+}
